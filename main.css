@@ -10,6 +10,10 @@ header {
     color: #ecf0f1;
     position: sticky;
     top: 0px;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
 }
 
 header nav li {
