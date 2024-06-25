@@ -4,16 +4,29 @@
     box-sizing: border-box;
 }
 
-header {
+@font-face {
+    font-family: 'OptimusPrinceps';
+    src: url('fonts/OptimusPrinceps.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OptimusPrincepsBold';
+    src: url('fonts/OptimusPrincepsSemiBold.ttf') format('truetype');
+}
+
+header, h1 {
     padding: 16px 0;
     background-color: #0c0b0b;
     color: #ecf0f1;
     position: sticky;
     top: 0px;
-    font-family: "Roboto Slab", serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
+    font-family: 'OptimusPrincepsBold';
+}
+section h2,
+section h3 {
+    font-family: 'OptimusPrinceps';
 }
 
 header nav li {
@@ -27,8 +40,12 @@ header nav li a {
     text-decoration: none;
 }
 
-body {
+body, section p {
     background-color: #000000;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
 
 .container {
@@ -104,14 +121,14 @@ section h3 {
 }
 
 form button {
-    background-color: #020205;
+    background-color: #b3a704;
     color: #ecf0f1;
     border: none;
     cursor: pointer;
 }
 
 form button:hover {
-    background-color: #161616;
+    background-color: #272726;
 }
 
 input:focus {
@@ -119,7 +136,7 @@ input:focus {
 }
 
 footer {
-    background-color: #000000;
+    background-color: #0c0b0b;
     color: #ecf0f1;
     padding: 16px 0;
 }
